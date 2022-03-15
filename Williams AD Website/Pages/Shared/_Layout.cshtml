@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Williams_AD_Website</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <div class="row border-bottom box-shadow align-items-center fixed-top background-black p-2" id="navbar">
+        <div class="col-lg-2 col-sm-12 text-center">
+            <a class="head-name" asp-area="" asp-page="/Index">Williams</a>
+        </div>
+        <div class="col-lg-8 col-sm-12">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm">
+            <div class="container justify-content-center">
+                <button class="navbar-toggler text-center" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon nav-link-style">Menu</span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-style" asp-area="" asp-page="/Web">Web</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-style" asp-area="" asp-page="/Design">Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-style" asp-area="" asp-page="/DigitalMedia">Digital Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-style" asp-area="" asp-page="/Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12 text-center">
+                <a class="nav-link-style" asp-area="" asp-page="/Login">Client Login</a>
+                </div>
+                <div class="col-lg-6 gone-when-small">
+                    <a href="mailto: aw@@williamsartanddesign.com">
+                        <img class="envelope img-fluid" src="assets/envelope.svg" alt="Envelope" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="">
+            <div class="height-set"></div>
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted background-black">
+        <div class="container nav-link-style">
+            &copy; 2022 - Williams_AD_Website
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
