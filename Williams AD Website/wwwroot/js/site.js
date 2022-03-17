@@ -13,11 +13,12 @@ $(window).resize(function () {
 $(document).ready(function () {
     var height = $("#navbar").height();
     $(".height-set").height(height + 23);
-
-    const scroller = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true
-    });
+    setTimeout(function () {
+        const scroller = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    }, 1000)
 });
 
 
