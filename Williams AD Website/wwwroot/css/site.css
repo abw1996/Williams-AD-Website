@@ -74,6 +74,25 @@ body {
 
 }
 
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 1199.98px) {
     .gone-when-small {
         display: none;
@@ -81,7 +100,7 @@ body {
 }
 
 .large-index {
-    display:inline;
+    display:block;
 }
 
 .small-index {
@@ -137,12 +156,19 @@ body {
     font-size: 50px;
     font-family: 'Cascadia Code';
 }
+    .title-orange-theme:hover {
+        text-decoration: none;
+    }
 
 .text-orange-theme {
     color: #FF9B4A !important;
     font-size: 20px;
     font-family: 'Cascadia Code';
 }
+
+    .text-orange-theme:hover {
+        text-decoration: none;
+    }
 
 .title-black-theme {
     color: #272727 !important;
@@ -156,10 +182,38 @@ body {
     font-family: 'Cascadia Code';
 }
 
+.gallery-disclaimer-text {
+    color: #272727 !important;
+    font-size: 12px;
+    font-family: 'Cascadia Code';
+}
+
 .min-div-height {
     min-height: 1000px;
 }
 
 .btn {
     font-family: 'Cascadia Code';
+}
+
+
+.logo-div:hover {
+    color: white !important;
+    filter: brightness(0) invert(1);
+}
+
+.small-title-black-theme {
+    color: #272727 !important;
+    font-size: 40px;
+    font-family: 'Cascadia Code';
+}
+
+.small-title-orange-theme {
+    color: #FF9B4A !important;
+    font-size: 40px;
+    font-family: 'Cascadia Code';
+}
+
+#failed-login-message {
+    visibility: hidden;
 }

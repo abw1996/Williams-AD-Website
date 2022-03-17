@@ -6,8 +6,10 @@
     <title>@ViewData["Title"] - Williams_AD_Website</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js" ></script>
 </head>
-<body>
+<body data-scroll-container>
     <header>
         <div class="row border-bottom box-shadow align-items-center fixed-top background-black p-2" id="navbar">
         <div class="col-lg-2 col-sm-12 text-center">
@@ -53,19 +55,23 @@
         </div>
         </div>
     </header>
-    <div class="container-fluid">
-        <div class="">
-            <div class="height-set"></div>
-            @RenderBody()
+    <div data-scroll-section>
+        <div class="container-fluid">
+            <div class="">
+                <div class="height-set"></div>
+                @RenderBody()
+            </div>
         </div>
+        <footer class="border-top footer text-muted background-black">
+            <div class="container nav-link-style">
+                &copy; 2022 - Williams Art and Design
+            </div>
+        </footer>
     </div>
 
-    <footer class="border-top footer text-muted background-black">
-        <div class="container nav-link-style">
-            &copy; 2022 - Williams_AD_Website
-        </div>
-    </footer>
+    
 
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

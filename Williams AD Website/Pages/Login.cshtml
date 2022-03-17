@@ -1,4 +1,22 @@
-﻿@page
+﻿@page 
 @model Williams_AD_Website.Pages.LoginModel
 @{
+
 }
+
+<div class="text-center">
+    <div class="row background-blue min-div-height align-items-center justify-content-center">
+        <div class="login-div col-lg-6 col-sm-8 text-center">
+            <form method="post" id="loginForm">
+                
+                        <p class="text-orange-theme" id="failed-login-message">Username or Password is incorrect</p>
+         
+                <h1 class="small-title-orange-theme">Username</h1> <br />
+                <input asp-for="username" class="form-input" />
+                <h1 class="small-title-orange-theme">Password</h1> <br />
+                <input asp-for="password" class="form-input" /> <br />
+                <button class="btn btn-lg" type="button" id="loginSubmit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
